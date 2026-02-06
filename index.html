@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio showcasing projects, skills, and contact information." />
+  <title>Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Go to top of page">Dev<span>Portfolio</span></a>
+      <nav class="nav" aria-label="Primary Navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <ul id="primary-menu" class="nav-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" role="banner">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1>Hi, I’m <span class="accent">Your Name</span></h1>
+        <p class="subtitle">Front-End Developer • Problem Solver • Lifelong Learner</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="#contact" class="btn outline">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="assets/profile-placeholder.svg" alt="Profile illustration" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About</h2>
+      <p>
+        I’m a passionate developer focused on building clean, user-centric web experiences.
+        I enjoy turning complex problems into simple, beautiful, and intuitive designs.
+        When I’m not coding, you can find me exploring design trends and optimizing workflows.
+      </p>
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>What I Do</h3>
+          <p>Modern, responsive websites with accessible, maintainable code. I emphasize performance, semantics, and great UX.</p>
+        </div>
+        <div class="about-card">
+          <h3>How I Work</h3>
+          <p>Iterative and collaborative. I value clear communication, thoughtful architecture, and measurable outcomes.</p>
+        </div>
+        <div class="about-card">
+          <h3>What I Value</h3>
+          <p>Craftsmanship, curiosity, and empathy. Good software solves real problems for real people.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-media"></div>
+          <div class="project-content">
+            <h3>Project One</h3>
+            <p>Responsive website redesign improving Lighthouse score by 35% and increasing conversions.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="project-actions">
+              <a class="btn small" href="#" aria-label="View Project One live">Live</a>
+              <a class="btn small outline" href="#" aria-label="View Project One source code">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-media"></div>
+          <div class="project-content">
+            <h3>Project Two</h3>
+            <p>Single-page app with smooth navigation and stateful UI components.</p>
+            <div class="project-tags">
+              <span>React</span><span>TypeScript</span><span>Vite</span>
+            </div>
+            <div class="project-actions">
+              <a class="btn small" href="#" aria-label="View Project Two live">Live</a>
+              <a class="btn small outline" href="#" aria-label="View Project Two source code">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-media"></div>
+          <div class="project-content">
+            <h3>Project Three</h3>
+            <p>Design system starter with tokens, utilities, and reusable components.</p>
+            <div class="project-tags">
+              <span>Design</span><span>Figma</span><span>System</span>
+            </div>
+            <div class="project-actions">
+              <a class="btn small" href="#" aria-label="View Project Three live">Live</a>
+              <a class="btn small outline" href="#" aria-label="View Project Three source code">Code</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <ul class="skill-list" role="list">
+        <li>HTML5</li>
+        <li>CSS3 / SASS</li>
+        <li>JavaScript / TypeScript</li>
+        <li>React / Vue</li>
+        <li>Responsive Design</li>
+        <li>Accessibility (a11y)</li>
+        <li>Performance Optimization</li>
+        <li>Git / GitHub</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section alt">
+    <div class="container contact-inner">
+      <h2 class="section-title">Contact</h2>
+      <p>Interested in collaborating or have a project in mind? Send a message:</p>
+      <form class="contact-form" action="#" method="post" onsubmit="return false;" aria-label="Contact form">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required />
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+        </div>
+        <button class="btn primary" type="submit">Send Message</button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+      <div class="socials">
+        <a href="#" aria-label="GitHub" title="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.98 5.24.98 11.5c0 4.85 3.15 8.96 7.52 10.41.55.1.75-.24.75-.53 0-.26-.01-1.14-.02-2.07-3.06.66-3.71-1.28-3.71-1.28-.5-1.28-1.22-1.62-1.22-1.62-.99-.68.08-.67.08-.67 1.09.08 1.66 1.12 1.66 1.12.98 1.67 2.57 1.19 3.2.91.1-.71.38-1.19.69-1.47-2.44-.28-5-1.22-5-5.43 0-1.2.43-2.19 1.12-2.96-.11-.28-.49-1.41.11-2.94 0 0 .92-.29 3.02 1.13a10.5 10.5 0 0 1 5.5 0c2.1-1.42 3.02-1.13 3.02-1.13.6 1.53.22 2.66.11 2.94.69.77 1.12 1.76 1.12 2.96 0 4.22-2.56 5.15-5 5.43.39.34.74 1.02.74 2.07 0 1.5-.01 2.71-.01 3.08 0 .29.2.64.75.53A10.52 10.52 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5Z"/></svg>
+        </a>
+        <a href="#" aria-label="LinkedIn" title="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.6 4.08 5.5 2.98 5.5S.98 4.6.98 3.5C.98 2.4 1.88 1.5 2.98 1.5s2 .9 2 2ZM1.28 8h3.4v13.5h-3.4V8Zm6.23 0h3.26v1.85h.05c.45-.86 1.57-1.77 3.24-1.77 3.47 0 4.11 2.28 4.11 5.25v8.17h-3.4v-7.24c0-1.73-.03-3.95-2.4-3.95-2.4 0-2.77 1.87-2.77 3.82v7.37h-3.4V8Z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
